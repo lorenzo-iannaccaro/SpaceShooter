@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // Configuration variables and objects
     [SerializeField] float movementSpeed = 10f;
     [SerializeField] float padding = 1f;
+    [SerializeField] GameObject playerLaserPrefab;
+    [SerializeField] float laserSpeed = 25f;
 
     float xMin, xMax, yMin, yMax;
 
@@ -16,6 +19,13 @@ public class Player : MonoBehaviour
         SetupMovementBoundaries();
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        Move();
+        Fire();
+    }
+
     private void SetupMovementBoundaries()
     {
         Camera gameCamera = Camera.main;
@@ -23,12 +33,6 @@ public class Player : MonoBehaviour
         xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Move();
     }
 
     private void Move()
@@ -43,5 +47,14 @@ public class Player : MonoBehaviour
 
         // Set new position
         transform.position = new Vector2(newXPos, newYPos);
+    }
+
+    private void Fire()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject playerLaser = Instantiate(playerLaserPrefab, transform.position, Quaternion.identity) as GameObject;
+            playerLaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
+        }
     }
 }
