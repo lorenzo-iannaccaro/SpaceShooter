@@ -558,7 +558,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d815b337c95ee3241a65411809c4cc48, type: 2}
   - {fileID: 11400000, guid: 053cca3b2d69fb44089ed1a0bf2e48a6, type: 2}
   - {fileID: 11400000, guid: a7abedbf26b2bb24fb5cda50e19085d4, type: 2}
-  timeBetweenWavesSpawn: 4
+  timeBetweenWavesSpawn: 3
+  looping: 1
 --- !u!4 &2028005302
 Transform:
   m_ObjectHideFlags: 0
@@ -790,17 +791,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3173753847866447889, guid: 7129394a7c55efa43a1985600f4cb3e2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 3173753849069084060, guid: 7129394a7c55efa43a1985600f4cb3e2,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000,
-        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7129394a7c55efa43a1985600f4cb3e2, type: 3}

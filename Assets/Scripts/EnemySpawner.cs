@@ -7,14 +7,17 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] float timeBetweenWavesSpawn = 2f;
+    [SerializeField] bool looping = true;
     int startWaveIndex = 0;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        //var currentWave = waveConfigs[startWaveIndex];
-        //StartCoroutine(SpawnEnemiesInWave(currentWave));
-        StartCoroutine(SpawnWaves());
+        do
+        {
+            yield return StartCoroutine(SpawnWaves());
+        }
+        while (looping);
     }
 
     // Update is called once per frame
