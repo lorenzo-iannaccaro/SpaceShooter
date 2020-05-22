@@ -6,12 +6,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Configuration variables and objects
+    [Header("Movement")]
     [SerializeField] float movementSpeed = 10f;
     [SerializeField] float padding = 1f;
+    [Header("Firing")]
     [SerializeField] GameObject playerLaserPrefab;
     [SerializeField] float laserSpeed = 25f;
     [SerializeField] float laserFiringPeriod = 0.3f;
-    [SerializeField] float health = 500f;
+    [Header("Health")]
+    [SerializeField] int health = 500;
 
     Coroutine firingCoroutine;
 
