@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3109590027866000041}
   - component: {fileID: 3109590027866000038}
   - component: {fileID: -4869127610519631243}
+  - component: {fileID: -5380465839114968552}
+  - component: {fileID: -5794557749080190137}
   m_Layer: 0
   m_Name: Enemy Purple
   m_TagString: Untagged
@@ -94,3 +96,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73e38d93e934e874a9cf4d8183e7b3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5380465839114968552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109590027866000039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ce6edb893bfed469dd7d9a7cba74d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!70 &-5794557749080190137
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109590027866000039}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.03, y: 0.84}
+  m_Direction: 0
