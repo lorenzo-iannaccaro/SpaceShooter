@@ -98,5 +98,5 @@ MonoBehaviour:
   padding: 1
   playerLaserPrefab: {fileID: 2351546134978828560, guid: cc0f2d5e4e8669a4fb198a4325ebcd92,
     type: 3}
-  laserSpeed: 25
-  laserFiringPeriod: 0.2
+  laserSpeed: 30
+  laserFiringPeriod: 0.1
