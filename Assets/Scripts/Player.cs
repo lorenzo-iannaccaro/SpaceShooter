@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject playerLaserPrefab;
     [SerializeField] float laserSpeed = 25f;
     [SerializeField] float laserFiringPeriod = 0.3f;
+    [SerializeField] float health = 500f;
 
     Coroutine firingCoroutine;
 
@@ -72,6 +73,21 @@ public class Player : MonoBehaviour
                 Instantiate(playerLaserPrefab, transform.position, Quaternion.identity) as GameObject;
             playerLaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
             yield return new WaitForSeconds(laserFiringPeriod);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        DamageDealer otherObjectDamageDealer = otherObject.GetComponent<DamageDealer>();
+        ProcessHit(otherObjectDamageDealer);
+    }
+
+    private void ProcessHit(DamageDealer otherObjectDamageDealer)
+    {
+        health -= otherObjectDamageDealer.GetDamage();
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

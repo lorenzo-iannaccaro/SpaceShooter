@@ -109,6 +109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  enemyLaserPrefab: {fileID: 2351546134978828560, guid: f786abb07805454489b8bd9e50c42748,
+    type: 3}
+  enemyLaserSpeed: -15
 --- !u!70 &7213973134195776230
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
