@@ -105,6 +105,7 @@ public class Player : MonoBehaviour
 
     private void ProcessDestruction()
     {
+        FindObjectOfType<Level>().LoadGameOver();
         Destroy(gameObject);
         explosionVfx = Instantiate(explosionVfx, transform.position, transform.rotation);
         AudioSource.PlayClipAtPoint(explosionSfx, Camera.main.transform.position, explosionSfxVolume);

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -4869127610519631243}
   - component: {fileID: -5380465839114968552}
   - component: {fileID: -5794557749080190137}
+  - component: {fileID: -152325085864950383}
+  - component: {fileID: -3706392351242316442}
   m_Layer: 9
   m_Name: Enemy Purple
   m_TagString: Untagged
@@ -112,7 +114,7 @@ MonoBehaviour:
   enemyLaserPrefab: {fileID: 2351546134978828560, guid: f786abb07805454489b8bd9e50c42748,
     type: 3}
   enemyLaserSpeed: -15
-  laserSfx: {fileID: 8300000, guid: 039d4780a3d359844b6c3792d5a29fdc, type: 3}
+  laserSfx: {fileID: 8300000, guid: f4e7821cf2350b549b7c3489ab445a55, type: 3}
   laserSfxVolume: 0.5
   explosionVfx: {fileID: 8420428679412047227, guid: 506b5e47547c0bd4a9f3674d5526b3fe,
     type: 3}
@@ -128,9 +130,43 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.03, y: 0.84}
   m_Direction: 0
+--- !u!114 &-152325085864950383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109590027866000039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3890244d359d24da9fa7ba8a0fd44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 999
+--- !u!50 &-3706392351242316442
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109590027866000039}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

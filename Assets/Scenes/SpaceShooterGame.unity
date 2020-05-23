@@ -895,7 +895,7 @@ PrefabInstance:
     - target: {fileID: 7960767961897983920, guid: 6aa94e4d08ed3b441bffcaffa3989a0c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.75
+      value: 11.39
       objectReference: {fileID: 0}
     - target: {fileID: 7960767961897983920, guid: 6aa94e4d08ed3b441bffcaffa3989a0c,
         type: 3}
@@ -960,6 +960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemySpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101945604751533761, guid: d385272cd89c952489f8ad23151a32a4,
+        type: 3}
+      propertyPath: waveConfigs.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9101945604751533762, guid: d385272cd89c952489f8ad23151a32a4,
         type: 3}
