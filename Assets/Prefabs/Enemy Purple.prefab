@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4869127610519631243}
   - component: {fileID: -5380465839114968552}
   - component: {fileID: -5794557749080190137}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy Purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
