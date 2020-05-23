@@ -112,6 +112,12 @@ MonoBehaviour:
   enemyLaserPrefab: {fileID: 2351546134978828560, guid: f786abb07805454489b8bd9e50c42748,
     type: 3}
   enemyLaserSpeed: -15
+  laserSfx: {fileID: 8300000, guid: 039d4780a3d359844b6c3792d5a29fdc, type: 3}
+  laserSfxVolume: 0.5
+  explosionVfx: {fileID: 8420428679412047227, guid: 506b5e47547c0bd4a9f3674d5526b3fe,
+    type: 3}
+  explosionSfx: {fileID: 8300000, guid: 18c504373f6da664eac2a3f8c0d0c460, type: 3}
+  explosionSfxVolume: 0.5
 --- !u!70 &7213973134195776230
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -101,7 +101,13 @@ MonoBehaviour:
     type: 3}
   laserSpeed: 30
   laserFiringPeriod: 0.1
+  laserSfx: {fileID: 8300000, guid: 37c890b4b9f783943b51956eab78728d, type: 3}
+  laserSfxVolume: 0.5
   health: 500
+  explosionVfx: {fileID: 8420428679412047227, guid: 506b5e47547c0bd4a9f3674d5526b3fe,
+    type: 3}
+  explosionSfx: {fileID: 8300000, guid: cf140bd1df5eb4141b951fae480b7a35, type: 3}
+  explosionSfxVolume: 0.5
 --- !u!70 &7702998893521851827
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
