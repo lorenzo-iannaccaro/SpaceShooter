@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] float laserSpeed = 25f;
     [SerializeField] float laserFiringPeriod = 0.3f;
     [SerializeField] AudioClip laserSfx;
-    [SerializeField] [Range(0, 1)] float laserSfxVolume = 0.5f;
+    [SerializeField] [Range(0, 1)] float laserSfxVolume = 0.3f;
     [Header("Health")]
     [SerializeField] int health = 500;
     [Header("Death")]

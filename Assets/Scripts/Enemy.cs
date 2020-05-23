@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject enemyLaserPrefab;
     [SerializeField] float enemyLaserSpeed = -15f;
     [SerializeField] AudioClip laserSfx;
-    [SerializeField] [Range(0, 1)] float laserSfxVolume = 0.5f;
+    [SerializeField] [Range(0, 1)] float laserSfxVolume = 0.3f;
     [Header("Death")] 
     [SerializeField] GameObject explosionVfx;
     [SerializeField] AudioClip explosionSfx;
