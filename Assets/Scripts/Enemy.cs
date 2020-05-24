@@ -16,6 +16,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject explosionVfx;
     [SerializeField] AudioClip explosionSfx;
     [SerializeField] [Range(0,1)] float explosionSfxVolume = 0.8f;
+    [SerializeField] int deathScore = 50;
+
+    GameSession gameSession;
 
     float fireTimer;
     float fireTimerMin = 0.2f;
@@ -63,6 +66,8 @@ public class Enemy : MonoBehaviour
         otherObjectDamageDealer.Hit();
         if (health <= 0)
         {
+            gameSession = FindObjectOfType<GameSession>();
+            gameSession.AddToScore(deathScore);
             ProcessDestruction();
         }
     }

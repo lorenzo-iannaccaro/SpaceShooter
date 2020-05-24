@@ -7,6 +7,8 @@ public class Level : MonoBehaviour
 {
     [SerializeField] float gameOverDelayInSeconds = 3f;
 
+    GameSession gameSession;
+
     public void LoadStartMenu()
     {
         SceneManager.LoadScene(0);
@@ -14,6 +16,8 @@ public class Level : MonoBehaviour
 
     public void LoadGame()
     {
+        gameSession = FindObjectOfType<GameSession>();
+        gameSession.Reset();
         SceneManager.LoadScene("SpaceShooterGame");
     }
 
