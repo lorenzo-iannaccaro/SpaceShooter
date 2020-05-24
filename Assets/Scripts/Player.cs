@@ -111,4 +111,9 @@ public class Player : MonoBehaviour
         AudioSource.PlayClipAtPoint(explosionSfx, Camera.main.transform.position, explosionSfxVolume);
         Destroy(explosionVfx, 1f);
     }
+
+    public int GetHealth()
+    {
+        return health;
+    }
 }
