@@ -10,6 +10,12 @@ public class GameSession : MonoBehaviour
     private void Awake()
     {
         SetupSingleton();
+
+        // Set screen size for Standalone
+        #if UNITY_STANDALONE
+                Screen.SetResolution(540, 960, false);
+                Screen.fullScreen = false;
+        #endif
     }
 
     private void SetupSingleton()
