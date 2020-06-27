@@ -95,12 +95,17 @@ public class Player : MonoBehaviour
 
     private void ProcessHit(DamageDealer otherObjectDamageDealer)
     {
-        health -= otherObjectDamageDealer.GetDamage();
-        otherObjectDamageDealer.Hit();
-        if (health <= 0)
+        if(otherObjectDamageDealer.GetDamage() >= health)
         {
+            health = 0;
             ProcessDestruction();
         }
+        else
+        {
+            health -= otherObjectDamageDealer.GetDamage();
+        }
+
+        otherObjectDamageDealer.Hit();
     }
 
     private void ProcessDestruction()

@@ -100,7 +100,7 @@ MonoBehaviour:
   playerLaserPrefab: {fileID: 2351546134978828560, guid: cc0f2d5e4e8669a4fb198a4325ebcd92,
     type: 3}
   laserSpeed: 30
-  laserFiringPeriod: 0.1
+  laserFiringPeriod: 0.3
   laserSfx: {fileID: 8300000, guid: 37c890b4b9f783943b51956eab78728d, type: 3}
   laserSfxVolume: 0.5
   health: 500
